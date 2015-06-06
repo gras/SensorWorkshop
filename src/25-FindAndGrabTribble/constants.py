@@ -1,7 +1,7 @@
 # Making Sense of Sensors Workshop
 # Educators Edition 2015
 #
-# 2-DriveStop
+# 25-FindAndGrabTribble
 # constants.py
 '''
 @author: Dead Robot Society
@@ -31,6 +31,3 @@ grabberClosed = 450
 blobSize = 2000
 chanRed = 0
 chanGreen = 1
-
-
-

@@ -1,7 +1,10 @@
+# Making Sense of Sensors Workshop
+# Educators Edition 2015
+#
+# 25-FindAndGrabTribble
+# movement.py
 '''
-Created on Jun 3, 2015
-
-@author: gras
+@author: Dead Robot Society
 '''
 import time 
 import kovan as link
