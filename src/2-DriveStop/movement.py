@@ -7,6 +7,11 @@ import time
 import kovan as link
 import constants as c
 
+def forward(speed=100) :
+    link.create_drive_straight(speed)
+    time.sleep(50)
+    link.create_stop()
+
 def moveServo( servo, endPos, speed=10 ) :
     # speed of 1 is slow
     # speed of 2000 is fast

@@ -1,15 +1,16 @@
+# Making Sense of Sensors Workshop
+# Educators Edition 2015
+#
+# 2-DriveStop
+# main.py
 '''
-Created on Jun 3, 2015
-
-@author: gras
+@author: Dead Robot Society
 '''
 import actions as act
 
 def main() :
     act.init()
-    act.testMotors()
-    #act.runMotors()
-    #act.testCamera()
+    act.driveStop()
     act.shutdown()
     
 

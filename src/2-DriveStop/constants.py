@@ -1,17 +1,31 @@
+# Making Sense of Sensors Workshop
+# Educators Edition 2015
+#
+# 2-DriveStop
+# constants.py
 '''
-Created on Jun 3, 2015
+@author: Dead Robot Society
+'''
 
-@author: gras
-'''
+# analog ports
+leftTopHat = 0
+etSensor = 0
+startLight = 0
+rightTopHat = 0
+
+# digital ports
 
 # servo ports
-shutter = 0
+arm = 1
+grabber = 2
 
 # motor ports
 
 # servo positions
-shutterOpen = 401
-shutterClosed = 1301
+armDown = 1150
+armUp = 50
+grabberOpen = 1700
+grabberClosed = 450
 
 #camera
 blobSize = 2000
