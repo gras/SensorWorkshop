@@ -15,13 +15,15 @@ import time
 import kovan as link
 
 import movement as move
+import sensors 
 
 
 
 def init() :
-    # set print to unbuffered
-    sys.stdout = os.fdopen(sys.stdout.fileno(),'w',0)
-    print "starting 2-DriveStop"
+    print "starting 25--FindAndGrabTribble"
+    link.create_connect()
+    link.create_full()
+    sensors.init()
     print "Initialized"
     
 def driveStop():

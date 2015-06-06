@@ -6,3 +6,8 @@
 '''
 @author: Dead Robot Society
 '''
+
+import kovan as link
+
+def init() :
+    link.camera_open() 
