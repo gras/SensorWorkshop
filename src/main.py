@@ -12,6 +12,8 @@ import actions as act
 def main() :
     act.init()
     act.findTribble()
+    act.gotoTribble()
+    act.grabTribble()
     act.shutdown()
     
 

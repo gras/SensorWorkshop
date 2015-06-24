@@ -7,17 +7,20 @@
 @author: Dead Robot Society
 '''
 
-import time
+from time import sleep
 
 import kovan as link
 import constants as c
 
 #
-# camera routines
+# public camera routines
 #
-def takePicture():
-    link.camera_update()
-    
+'''
+    Returns the X position of the center of the red blob
+    in number of pixels to left or right of center
+    (left is negative)
+    Returns -1000 if nothing seen
+'''
 def getRedPosition(blob=0):
     takePicture()
     # do we see anything?
@@ -34,11 +37,43 @@ def getRedPosition(blob=0):
     # calculate how far to left or right
     # (left is negative)
     return (c.centerPoint - x)
+
+
+#
+# public ET routines
+#
+'''
+    Returns True when the tribble is close enough to grab
+    Returns False otherwise
+'''
+def pomInRange():
+    i = readET()
+    print "Dist: ", i
+    if i > c.minDist:
+        return True
+    return False
+
+#
+# camera helper routines
+#
+def takePicture():
+    link.camera_update()
+
+'''
+    
+'''
 def getRedBlobX(blob=0):
     return link.get_object_centroid(c.chanRed, blob).x
 
 def getRedBlobSize(blob=0):
     return link.get_object_area(c.chanRed, blob)
+
+#
+# sensor helper routines
+#
+def readET():
+    return link.analog_et(c.etSensor)
+
 
 #
 # initialization/shutdown routines
@@ -52,7 +87,7 @@ def init():
     # warm up the camera
     for _ in range(1, 10):
         takePicture()
-        time.sleep(0.25)
+        sleep(0.25)
         
 
 def shutdown() :

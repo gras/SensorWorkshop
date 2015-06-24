@@ -8,40 +8,74 @@
 '''
 
 
-import os
-import sys
-import time
-
-import kovan as link
+from time import sleep
 
 import movement as move
 import sensors 
 
+#
+# Main routines
+#
 
+# rotate to the left, until a red pom is seen
+def findTribble() :
+    tribbleFound = 0
+    move.spinLeft()
+    while not tribbleFound :
+        sleep(0.2)        
+        pos = sensors.getRedPosition()
+        print "Pos: ", pos
+        if pos >  0:
+            move.stop()
+            tribbleFound = 1
+    print "found Tribble..."
 
+# rotate until the pom is centered
+# then move a bit closer
+# repeat until the pom is close enough to grab
+def gotoTribble():
+    tribbleNear = False
+    while not tribbleNear:
+        move.distance(80, 0.2)        
+        centered = False
+        while not centered:
+            pos = sensors.getRedPosition()
+            print "Pos: ", pos
+            if pos > -10 & pos < 10:
+                centered = True
+            elif pos > 0:
+                move.right()
+            else:
+                move.left()
+        tribbleNear = sensors.pomInRange() 
+    print "near tribble.."      
+
+# rotate until the pom is centered
+# then move a bit closer
+# repeat until the pom is close enough to grab
+def grabTribble():
+    move.armDown()
+    move.distance(50, 1.0)
+    move.clawClosed()
+    move.armUp()       
+    move.clawOpen()
+    print "grabbed tribble..."            
+        
+#
+# Helper functions
+#
 def init() :
     print "starting 25--FindAndGrabTribble"
-    link.create_connect()
-    link.create_full()
+    move.init()
     sensors.init()
     print "Initialized"
     
-def driveStop():
-    
-    time.sleep(60)
-    link.ao()           
-        
-def shutdown():
+def shutdown() :
+    move.shutdown()
+    sensors.shutdown()
     print "finished"
-    link.ao()
-    time.sleep(1.0)
-
-
-    
-
-    
+          
 def DEBUG() :
     print "DEBUG"
-    link.camera_close()
-    link.ao()
+    shutdown()
     exit()
