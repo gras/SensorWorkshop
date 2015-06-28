@@ -22,13 +22,6 @@ def stop() :
     link.create_stop()
 
 '''
-    starts to drive forward 
-    default speed is 100 mm/sec
-'''
-def forwardNoStop(speed=100) :
-    link.create_drive_straight(-speed)
-
-'''
     drive forward and stop after a given time
     default speed is 100 mm/sec
     default time is 5 sec
@@ -37,6 +30,13 @@ def forward(speed=100, time=5.0) :
     link.create_drive_straight(-speed)
     sleep(time)
     link.create_stop()
+
+'''
+    starts to spin counter-clockwise
+    default speed is 40 mm/sec
+'''
+def spinLeftNoStop(speed=40) :
+    link.create_spin_CCW(speed)
 
 '''
     Set the arm to the down position

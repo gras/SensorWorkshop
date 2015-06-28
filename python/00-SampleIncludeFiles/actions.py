@@ -29,7 +29,7 @@ def getOutOfStartBox() :
 '''
 def doSomething() :
     print "doSomething()"
-    move.forwardNoStop() 
+    move.spinLeftNoStop() 
     move.armDown()
     move.armUp()
     move.stop()       
