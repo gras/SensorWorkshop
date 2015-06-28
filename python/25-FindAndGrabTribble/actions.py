@@ -102,5 +102,5 @@ def init(codeBase) :
 def shutdown() :
     print "shutting down..."
     move.shutdown()
-    sensors.shutdown()
+    sensor.shutdown()
     print "finished"

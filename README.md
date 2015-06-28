@@ -1,7 +1,9 @@
 # SensorWorkshop
 Example code for GCER 2015 "Making Sense of Sensors" Workshop
 
-0.	Use of include files [discussion]
+Use of include files [discussion]
+
+Exercises:
 1.	Constants setup [guided]
 2.	Hello world [guided]
 3.	Drive one foot & stop [guided]
