@@ -1,7 +1,8 @@
 # 00-SampleIncludeFiles
-##The goal of this discussion is to understand the benefits 
-##of having multiple files, rather than putting all of your
-##code in a big steaming pile inside of a single file.
+##The goal of this discussion is:
+to understand the benefits 
+of having multiple files, rather than putting all of your
+code in a big steaming pile inside of a single file.
 
 **Suggested File Structure:**
 * **main** - starting point of your program.  It contains the high level commands 
