@@ -4,10 +4,11 @@ Example code for GCER 2015 "Making Sense of Sensors" Workshop
 Use of include files [discussion]
 
 Exercises:
+
 1.	Constants setup [guided]
 2.	Hello world [guided]
 3.	Drive one foot & stop [guided]
-4.	Using DEBUG(ìmsgî) [guided]
+4.	Using DEBUG(‚Äúmsg‚Äù) [guided]
 5.	Drive one foot, turn right 90 degrees & stop
 6.	Drive in a square
 7.	Drive square (start with light) 
