@@ -32,10 +32,10 @@ clawPort = 3
 ##################################
 # servo positions
 ##################################
-armDown = 1350
-armUp = 1
-clawOpen = 1700
-clawClosed = 450
+armDown = 
+armUp = 
+clawOpen = 
+clawClosed = 
 
 ##################################
 # camera settings
@@ -49,4 +49,4 @@ nothingSeen = -1000
 ##################################
 # ET settings
 ##################################
-minDist = 370
+minDist = 
