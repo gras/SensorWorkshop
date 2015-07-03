@@ -1,8 +1,9 @@
-# 02-HelloWorld
-##Goal:  Modify and run your first Python program 
+# 18-StopSixInchesFromWall
+##Goal:  Use the ET sensor to find a wall 
 
 **To Do:**
-* change the code to print "Hello World"
-* run the program to prove that it works
-* add your name instead of "World"
-* run the program again
+* drive towards the wall
+* stop when you are six inches away
+
+**Hint:**
+* search KIPR documentation for 'analog_et'

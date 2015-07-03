@@ -1,8 +1,8 @@
-# 02-HelloWorld
-##Goal:  Modify and run your first Python program 
+# 21-CenterOnRedPom
+##Goal:  Use the camera to aim at a tribble 
 
 **To Do:**
-* change the code to print "Hello World"
-* run the program to prove that it works
-* add your name instead of "World"
-* run the program again
+* put a tribble to the left (where the camera can't see it)
+* start to spin slowly to the left
+* stop when you see a tribble
+* spin left or right until the robot is aimed at the tribble

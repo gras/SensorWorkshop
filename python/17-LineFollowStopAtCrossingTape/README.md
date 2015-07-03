@@ -1,8 +1,6 @@
-# 02-HelloWorld
-##Goal:  Modify and run your first Python program 
+# 17-LineFollowStopAtCrossingTape
+##Goal:  Line follow while looking for tape 
 
 **To Do:**
-* change the code to print "Hello World"
-* run the program to prove that it works
-* add your name instead of "World"
-* run the program again
+* follow the line
+* stop when you see a piece of tape crossing your path

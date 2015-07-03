@@ -1,8 +1,7 @@
-# 02-HelloWorld
-##Goal:  Modify and run your first Python program 
+# 14-DriveUntilRightTopHatOnLine
+##Goal:  Use TopHat to find black tape 
 
 **To Do:**
-* change the code to print "Hello World"
-* run the program to prove that it works
-* add your name instead of "World"
-* run the program again
+* drive forward
+* look for tape
+* stop when you see it

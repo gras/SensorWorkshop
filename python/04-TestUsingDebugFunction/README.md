@@ -1,4 +1,4 @@
-# 04-TestByUsingDebugFunction
+# 04-TestUsingDebugFunction
 ##Goal:  Practice testing your code 
 
 **To Do:**

@@ -1,8 +1,7 @@
-# 02-HelloWorld
-##Goal:  Modify and run your first Python program 
+# 15-SquareUpUsingTwoTopHats
+##Goal:  Orient the robot using tape line 
 
 **To Do:**
-* change the code to print "Hello World"
-* run the program to prove that it works
-* add your name instead of "World"
-* run the program again
+* drive the robot towards a line of tape
+* stop when you see the line
+* turn until you see the line with the other TopHat

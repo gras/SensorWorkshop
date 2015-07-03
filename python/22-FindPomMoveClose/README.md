@@ -1,8 +1,9 @@
-# 02-HelloWorld
-##Goal:  Modify and run your first Python program 
+# 22-FindPomMoveClose
+##Goal:  Use the camera & ET to move towards a tribble 
 
 **To Do:**
-* change the code to print "Hello World"
-* run the program to prove that it works
-* add your name instead of "World"
-* run the program again
+* find the tribble with the camera
+* center on tribble
+* move a little closer
+* if you are close enough, stop
+* otherwise, repeat center/move
