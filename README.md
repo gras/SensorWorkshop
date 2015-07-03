@@ -19,11 +19,11 @@ Use of include files [discussion]
 12.	Drive backwards, bump, turn based on bump left/right
 13.	Drive/bump, repeat until A button pressed
 14.	Drive until right tophat sees line
-15.	Drive until left tophat sees line
-16.	Square up on line using two tophats
-17.	Line follow using center tophat
-18.	Line following, stop at crossing tape
-19.	Drive, stop at 6 inches from wall using ET
+15.	Square up on line using two tophats
+16.	Line follow using center tophat
+17.	Line following, stop at crossing tape
+18.	Drive, stop at 6 inches from wall using ET
+19. Display Tribble Info
 20.	Spin slowly, stop when red pom is seen
 21.	Spin, center on red pom
 22.	Find red pom, move until 6 inches away

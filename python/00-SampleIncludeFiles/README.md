@@ -1,5 +1,5 @@
 # 00-SampleIncludeFiles
-##The goal of this discussion is to understand the benefits of having multiple files, rather than putting all of your code in a big steaming pile inside of a single file.
+##Goal: understand the benefits of having multiple files
 
 **Suggested File Structure:**
 * **main** - starting point of your program.  It contains the high level commands 
@@ -11,3 +11,6 @@ that you want to accomplish.
 * **movement** - lower level commands that run motors and move servos.
 * **sensor** - lower level commands that interact with the camera and other sensors.
 * **constants** - a common file that specifies all of the settings needed for your robot.
+
+**Hint:**
+* don't put all of your code in a ~~big steaming pile~~ single file.
