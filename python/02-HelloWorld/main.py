@@ -19,7 +19,7 @@ import actions as act
     and end with act.shutdown()  
 '''
 def main() :
-    act.init("00-YourProgramName")  # change this!
+    act.init("00-YourProgramNameHere")  # change this!
     act.getOutOfStartBox()
     act.doSomething()
     act.shutdown()
